@@ -7,6 +7,7 @@ import Book from './components/auth/Book'
 import Success from './components/auth/Success'
 import Navbar from './components/common/Navbar'
 import NotFound from './components/common/NotFound'
+import Bookings from './components/auth/Bookings'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route exact path="/book" render={(props)=><Book {...props}/>}/>
         <Route exact path="/confirmed" render={()=><Success/>}/>
         <Route exact path="/login" render={()=><Login/>}/>
+        <Route exact path="/bookings" render={()=><Bookings/>}/>
         <Route render={()=><NotFound />} />
      </Switch>
     </div>
