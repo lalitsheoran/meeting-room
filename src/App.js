@@ -16,7 +16,7 @@ function App() {
      <Switch>
         <Route exact path="/" render={()=><Home/>}/>
         <Route exact path="/book" render={(props)=><Book {...props}/>}/>
-        <Route exact path="/confirmed" render={()=><Success/>}/>
+        <Route exact path="/confirmed" render={(props)=><Success {...props}/>}/>
         <Route exact path="/login" render={()=><Login/>}/>
         <Route exact path="/bookings" render={()=><Bookings/>}/>
         <Route render={()=><NotFound />} />
