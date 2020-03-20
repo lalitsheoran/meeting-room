@@ -66,7 +66,7 @@ class Home extends React.Component {
   render() {
     return (
       <>
-      <div class=" mx-2 input-group col col-md-4 col-lg-3">
+      {/* <div class=" mx-2 input-group col col-md-4 col-lg-3">
         <label className="m-2">Sort</label>
         <select onChange={this.handleChange} class="custom-select form-control" name="" id="">
           <option value="default" default selected>Default</option>
@@ -75,7 +75,7 @@ class Home extends React.Component {
           <option value="price">Price</option>
           <option value="floor">Floor</option>
         </select>
-      </div>
+      </div> */}
           <div className="row mt-2">
             {(this.state.ready) && this.state.data.map(e => {
               return (
